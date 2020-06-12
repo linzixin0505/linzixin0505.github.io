@@ -11,9 +11,12 @@
         var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
         var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
         if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+            //电脑端
             window.location.href="https://blog.csdn.net/weixin_44427998";
         } else {
-            window.location.href="http://www.baidu.com";
+            //如果是手机端，就跳这个页面
+            // window.location.href="http://www.baidu.com";
+            window.location.href="https://blog.csdn.net/weixin_44427998";
         }
     }
     browserRedirect();
